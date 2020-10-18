@@ -3,7 +3,7 @@ const API_KEY = 'd17f7271bf99e9a9396960410bb2e041';
 // retrieve all movie genres when the document is ready
 var genres = {};
 $(() => {
-  $.get('https://api.themoviedb.org/3/genre/movie/list', { api_key: API_KEY })
+  $.get('https://api.themoviedb.org/3/genre/movie/list', { api_key: db49f8a7caace1cb9c8c0bd9a2139714 })
     .done((r) => {
       r.genres.forEach((genre) => {
         genres[genre.id] = genre.name;
